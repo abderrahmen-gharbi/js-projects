@@ -1,0 +1,27 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#board{
+    border-radius: 1rem;
+    border: 2px solid black; /* Add a border around the board */
+    position: relative;
+  }
+  
+#board::before {
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid black; /* Add a horizontal line */
+  }
+  
+#board::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 33%;
+    height: 100%;
+    border-left: 1px solid black; /* Add a vertical line */
+  }
